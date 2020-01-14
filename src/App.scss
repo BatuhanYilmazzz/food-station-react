@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: 'Titillium Web', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  height: 90px;
+  padding: 30px;
+  color: #000;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.App-title {
+  font-size: 5rem;
+  font-family: 'Titillium Web', sans-serif;
+}

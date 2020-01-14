@@ -1,0 +1,35 @@
+.form {
+  margin: 5rem 0;
+  &__input {
+    background: transparent;
+    border: 0;
+    border-bottom: solid 2px #2c3e50;
+    margin-right: 10px;
+    letter-spacing: 2px;
+    width: 200px;
+    padding: 0.4rem;
+  }
+
+  &__button {
+    border: solid 2px #e74c3c;
+    background: transparent;
+    padding: 0.5rem 0.9rem;
+    margin: 0 0.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 0.7rem;
+  }
+}
+
+.wrapper {
+  max-width: 1300px;
+  display: grid;
+  grid-gap: 30px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  grid-template-rows: repeat(auto-fit, 500px);
+  justify-items: center;
+  align-items: center;
+  margin: 1rem auto;
+}

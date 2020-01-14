@@ -1,0 +1,55 @@
+.recipe {
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  text-transform: capitalize;
+  -webkit-box-shadow: -2px 0px 31px -1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -2px 0px 31px -1px rgba(0, 0, 0, 0.6);
+  box-shadow: -2px 0px 31px -1px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  position: relative;
+
+  &__img {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__box {
+    padding: 0.5rem 1.5rem;
+  }
+
+  &__title {
+    margin: 0.5rem auto;
+    text-align: left;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0.2rem;
+    h3 {
+      color: palevioletred;
+    }
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 0.7rem 8rem;
+    background: palevioletred;
+    color: #000;
+    margin: 1rem;
+    border: none;
+    border-radius: 2px;
+    box-shadow: lightness($color: #000000);
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
