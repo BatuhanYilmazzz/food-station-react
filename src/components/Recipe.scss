@@ -1,22 +1,26 @@
 .recipe {
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: 400px;
   background: #fff;
   text-transform: capitalize;
-  -webkit-box-shadow: -2px 0px 31px -1px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: -2px 0px 31px -1px rgba(0, 0, 0, 0.6);
-  box-shadow: -2px 0px 31px -1px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: -2px 0px 10px -1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -2px 0px 10px -1px rgba(0, 0, 0, 0.6);
+  box-shadow: -2px 0px 10px -1px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   position: relative;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &__img {
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     border-radius: 5px 5px 0 0;
   }
 
   &__box {
-    padding: 0.5rem 1.5rem;
+    padding: 0 1.5rem;
   }
 
   &__title {
@@ -32,24 +36,30 @@
     h3 {
       color: palevioletred;
     }
-    h2 {
+    h5 {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
     }
   }
 
   &__button {
+    box-sizing: border-box;
     display: inline-block;
-    padding: 0.7rem 8rem;
-    background: palevioletred;
-    color: #000;
-    margin: 1rem;
-    border: none;
+    padding: 0.3rem 5rem;
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
     border-radius: 2px;
-    box-shadow: lightness($color: #000000);
     position: absolute;
-    bottom: 1rem;
-    left: 1rem;
+    bottom: 18px;
+    left: 28px;
+    text-decoration: none;
+    transition: 0.4s;
+    &:hover {
+      background: #fff;
+      color: #000;
+      border: 2px solid #000;
+    }
   }
 }

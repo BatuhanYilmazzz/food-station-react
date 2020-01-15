@@ -38,6 +38,7 @@ const Form = () => {
             image={recipe.recipe.image}
             yeld={recipe.recipe.yield}
             ingredients={recipe.recipe.ingredientLines}
+            totalTime={recipe.recipe.totalTime}
           />
         ))}
       </div>

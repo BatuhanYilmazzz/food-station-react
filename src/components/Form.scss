@@ -11,7 +11,7 @@
   }
 
   &__button {
-    border: solid 2px #e74c3c;
+    border: solid 2px #000;
     background: transparent;
     padding: 0.5rem 0.9rem;
     margin: 0 0.2rem;
@@ -20,15 +20,21 @@
     text-transform: uppercase;
     font-weight: 400;
     margin-left: 0.7rem;
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
   }
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1000px;
   display: grid;
   grid-gap: 30px 20px;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
-  grid-template-rows: repeat(auto-fit, 500px);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  grid-template-rows: repeat(auto-fit, 400px);
   justify-items: center;
   align-items: center;
   margin: 1rem auto;
