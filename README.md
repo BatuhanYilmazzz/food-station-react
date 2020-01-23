@@ -1,30 +1,79 @@
-## Food Station
+<h1 align="center">Recipe App React</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/BatuhanYilmazzz/FoodStationReact#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/BatuhanYilmazzz/FoodStationReact/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://twitter.com/batuhan38008916" target="_blank">
+    <img alt="Twitter: BatuhanYilmaz" src="https://img.shields.io/twitter/follow/batuhan38008916.svg?style=social" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/BatuhanYilmazzz/FoodStationReact" target="_blank">
+    Picture
+  </a>
+</p>
 
-This is a recipe app.
+<br>
 
-## Available Scripts
+The full project requirements can be found below.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- Html5
+- Css3
+- Scss
+- JavaScript (ES6)
+- React Hooks
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Usage
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> Clone the repository to your local machine
 
-### `npm test`
+```sh
+$ --https://github.com/BatuhanYilmazzz/FoodStationReact.git
+```
+> cd into the directory, install dependencies, build and start
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+$ cd FoodStationReact
+$ npm install
+$ npm run build
+$ npm run start
+```
 
-### `npm run build`
+> Open `http://127.0.0.1:3000` using your favourite broswer, if it doesn't open automatically.
+and npm run start.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✨ [Live Demo](https://BatuhanYilmazzz.github.io/FoodStationReact/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Author
+
+👤 **Ahmet Batuhan Yılmaz**
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/BatuhanYilmazzz/NetflixReact/issues).
+
+1. Fork it (https://github.com/BatuhanYilmazzz/FoodStationReact.git/fork)
+2. Create your working branch (git checkout -b [choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
+4. Push to the branch (git push origin [chosen-name])
+5. Create a new Pull Request
+
+## Future Ideas
+
+- Make the app show different images for day and night
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+- Github: [@BatuhanYilmazzz](https://github.com/BatuhanYilmazzz)
+- Twitter: [@BatuhanYilmaz](https://twitter.com/batuhan38008916)
+
