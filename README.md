@@ -67,7 +67,7 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 
 ## Future Ideas
 
-- Make the app show different images for day and night
+- Make the app describe how you should cook the food .
 
 ## Show your support
 
