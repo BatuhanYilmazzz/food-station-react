@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 import { MdPeopleOutline, MdAccessTime } from 'react-icons/md';
 import './Recipe.scss';
 
-const Recipe = ({ title, calories, image, yeld, ingrediendts, totalTime }) => {
+const Recipe = ({
+  title,
+  calories,
+  image,
+  yeld,
+  ingrediendts,
+  totalTime,
+  url
+}) => {
   return (
     <div className='recipe'>
       <img src={image} alt='' className='recipe__img' />
@@ -29,10 +37,11 @@ const Recipe = ({ title, calories, image, yeld, ingrediendts, totalTime }) => {
           </div>
         </div>
       </div>
+
       <Link
         to={{
           pathname: `/recipe/${title}`,
-          state: { title }
+          state: { title, url }
         }}
         className='recipe__button'>
         Show Details

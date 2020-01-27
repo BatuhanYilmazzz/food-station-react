@@ -18,7 +18,7 @@ const RecipeItem = props => {
       setState(res.hits[0].recipe);
     }
     fetchMyData();
-  }, []);
+  }, [food]);
   return (
     <div className='recipe-container'>
       <div className='recipe-item'>
@@ -43,9 +43,9 @@ const RecipeItem = props => {
           <div>
             <h4>{state.calories}</h4>
             <p>Calories</p>
-            {console.log(state)}
           </div>
         </div>
+
         <div className='recipe-item__igredients'>
           <ul>
             {state.ingredientLines ? (
@@ -56,6 +56,7 @@ const RecipeItem = props => {
               <li></li>
             )}
           </ul>
+          <a href={state.url}>More</a>
         </div>
         <Link to='/'>Home</Link>
       </div>
