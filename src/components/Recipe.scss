@@ -44,16 +44,17 @@
   }
 
   &__button {
+    max-width: 100%;
     box-sizing: border-box;
     display: inline-block;
-    padding: 0.3rem 5rem;
+    padding: 5px 90px;
     background: #000;
     color: #fff;
     border: 2px solid #000;
     border-radius: 2px;
     position: absolute;
     bottom: 18px;
-    left: 28px;
+    left: 22px;
     text-decoration: none;
     transition: 0.4s;
     &:hover {

@@ -1,16 +1,15 @@
 .App {
   text-align: center;
-}
 
-.App-header {
-  height: 90px;
-  padding: 30px;
-  color: #000;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
+  &__header {
+    padding: 2rem;
+  }
 
-.App-title {
-  font-size: 5rem;
-  font-family: 'Titillium Web', sans-serif;
+  &__title {
+    font-size: 4rem;
+    font-family: 'Titillium Web', sans-serif;
+    @media (max-width: 768px) {
+      font-size: 3.5rem;
+    }
+  }
 }

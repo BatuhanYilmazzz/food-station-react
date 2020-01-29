@@ -18,6 +18,7 @@ const Form = () => {
     setRecipes(data.hits);
     setSearch('');
   };
+
   return (
     <div>
       <form className='form' onSubmit={getRecipe}>

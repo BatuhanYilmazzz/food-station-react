@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+html {
+  @media (max-width: 900px) {
+    font-size: 82.5%;
+  }
+}
+
 body {
   background-image: #fff;
   background-size: cover;
