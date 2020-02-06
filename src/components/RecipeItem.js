@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { MdPeopleOutline, MdAccessTime } from 'react-icons/md';
 import './RecipeItem.scss';
@@ -10,15 +11,14 @@ const RecipeItem = props => {
   const [state, setState] = useState([]);
   const food = props.location.state.title;
   useEffect(() => {
-    async function fetchMyData() {
-      const req = await fetch(
+    axios
+      .get(
         `https://api.edamam.com/search?q=${food}&app_id=${API_ID}&app_key=${API_KEY}`
-      );
-      const res = await req.json();
-      setState(res.hits[0].recipe);
-    }
-    fetchMyData();
-  }, [food]);
+      )
+      .then(res => setState(res.data.hits[0].recipe))
+      .catch(err => console.log(err));
+    // eslint-disable-next-line
+  }, []);
   return (
     <div className='recipe-container'>
       <div className='recipe-item'>
@@ -41,7 +41,7 @@ const RecipeItem = props => {
             <p>Minutes</p>
           </div>
           <div>
-            <h4>{state.calories}</h4>
+            <h4>{Math.round(state.calories).toString()}</h4>
             <p>Calories</p>
           </div>
         </div>

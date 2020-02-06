@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Recipe from './Recipe';
 import './Form.scss';
 
@@ -7,17 +8,21 @@ const Form = () => {
   const API_KEY = '8ed21eeb4bfb66412b93d58707992570';
 
   const [recipes, setRecipes] = useState([]);
+  const [query, setQuery] = useState('');
   const [search, setSearch] = useState('');
 
-  const getRecipe = async e => {
+  const getRecipe = e => {
     e.preventDefault();
-    const response = await fetch(
-      `https://api.edamam.com/search?q=${search}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=9`
-    );
-    const data = await response.json();
-    setRecipes(data.hits);
-    setSearch('');
+    setSearch(query);
   };
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.edamam.com/search?q=${search}&app_id=${API_ID}&app_key=${API_KEY}&from=0&to=9`
+      )
+      .then(res => setRecipes(res.data.hits))
+      .catch(err => console.log(err));
+  }, [search]);
 
   return (
     <div>
@@ -25,8 +30,8 @@ const Form = () => {
         <input
           type='text'
           className='form__input'
-          value={search}
-          onChange={e => setSearch(e.target.value)}
+          value={query}
+          onChange={e => setQuery(e.target.value)}
         />
         <button className='form__button'>Search</button>
       </form>
